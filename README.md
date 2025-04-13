@@ -104,7 +104,6 @@ Role definitions and permission tests are included in sql/user_roles.sql and doc
 │   ├── sample_data.sql          # Populates sample data
 │   └── queries.sql              # Analytical queries for testing
 ├── diagrams/
-│   ├── bookstore_erd.drawio     # ERD source file
 │   └── bookstore_erd.png        # Exported ERD image
 ├── image/                       # Query outputs
 ├── README.md                    # This file
