@@ -47,7 +47,7 @@ CREATE TABLE customer (
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
     email VARCHAR(255) UNIQUE NOT NULL,
-    phone VARCHAR(20)
+    phone VARCHAR(20),
     address TEXT NOT NULL,
     date_of_birth DATE,
     registration_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
@@ -129,7 +129,7 @@ CREATE TABLE order_line (
     quantity INT NOT NULL,
     price DECIMAL(10,2) NOT NULL,
     PRIMARY KEY (order_id, book_id),
-    FOREIGN KEY (order_id) REFERENCES cust_order(order_id) ON DELETE CASCADE,
+    FOREIGN KEY (order_id) REFERENCES customer_order(order_id) ON DELETE CASCADE,
     FOREIGN KEY (book_id) REFERENCES book(book_id)
 );
 
@@ -140,7 +140,7 @@ CREATE TABLE order_history (
     order_id INT,
     status_id INT,
     status_date DATETIME NOT NULL,
-    FOREIGN KEY (order_id) REFERENCES cust_order(order_id) ON DELETE CASCADE,
+    FOREIGN KEY (order_id) REFERENCES customer_order(order_id) ON DELETE CASCADE,
     FOREIGN KEY (status_id) REFERENCES order_status(status_id)
 );
 
