@@ -26,7 +26,10 @@ VALUES ('F. Scott', 'Fitzgerald', 'American novelist known for The Great Gatsby.
        ('Margaret', 'Atwood', 'Canadian author of speculative fiction.', '1939-11-18', 'Canadian');
 
 -- This inserts the sample data into the book_author table.     
-INSERT INTO book_author (book_id, author_id) VALUES (1, 1), (2, 2);
+INSERT INTO book_author (book_id, author_id)
+VALUES (1, 1),  -- Gatsby by Fitzgerald
+       (2, 2),  -- 1984 by Orwell
+       (3, 3);  -- Handmaid's Tale by Atwood
 
 -- This inserts the sample data into the customer table. 
 INSERT INTO customer (first_name, last_name, email, phone)
