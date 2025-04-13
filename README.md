@@ -95,8 +95,8 @@ contributor_role – Authors and contributors can manage their own records and r
 Role definitions and permission tests are included in sql/user_roles.sql and docs/role_test_log.txt.
 
 ### Repository Structure
-
-BookStore-Database-Group/
+<pre>
+   BookStore-Database-Group/
 ├── sql/
 │   ├── create_database.sql      # Creates the bookstore database
 │   ├── tables.sql               # Defines all tables
@@ -113,6 +113,8 @@ BookStore-Database-Group/
 ├── README.md                    # This file
 ├── CONTRIBUTING.md              # Contribution guidelines
 └── .gitignore                   # Ignores MySQL logs, temp files
+
+</pre>
 
 
 ## Setup Instructions
