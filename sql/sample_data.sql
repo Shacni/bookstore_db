@@ -32,9 +32,10 @@ VALUES (1, 1),  -- Gatsby by Fitzgerald
        (3, 3);  -- Handmaid's Tale by Atwood
 
 -- This inserts the sample data into the customer table. 
-INSERT INTO customer (first_name, last_name, email, phone)
-VALUES ('John', 'Doe', 'john.doe@email.com', '070-328-5635'),
-       ('Jane', 'Smith', 'jane.smith@email.com', '078-765-4321');
+INSERT INTO customer (first_name, last_name, email, address, phone, date_of_birth)
+VALUES ('John', 'Doe', 'john.doe@email.com', '123 Maple St, New York, NY 10001', '555-0101', '1990-05-15'),
+       ('Jane', 'Smith', 'jane.smith@email.com', '456 Oak Ave, London, SW1A 1AA', '555-0102', '1985-08-22'),
+       ('Alice', 'Brown', 'alice.brown@email.com', '789 Pine Rd, Toronto, M5V 2T6', '555-0103', '1995-03-10');
 
 -- This inserts the sample data into the address table. 
 INSERT INTO address (street, city, postal_code, country_id)
