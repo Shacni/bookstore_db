@@ -4,35 +4,35 @@ CREATE ROLE admin_role, manager_role, clerk_role, user_role, contributer_role;
 
 -- Grant Previledges to roles
 -- This grants all previledges to the admin role. 
-GRANT ALL ON bookstore.* TO admin_role;
+GRANT ALL ON bookstore_db.* TO admin_role;
 
 -- This grants select, insert, update previledges to the manager role. 
-GRANT SELECT, INSERT, UPDATE ON bookstore.book TO manager_role;
-GRANT SELECT, INSERT, UPDATE ON bookstore.customer_order TO manager_role;
-GRANT SELECT, INSERT, UPDATE ON bookstore.order_line TO manager_role;
-GRANT SELECT, INSERT, UPDATE ON bookstore.customer TO manager_role;
-GRANT SELECT, INSERT, UPDATE ON bookstore.book_author TO manager_role;
-GRANT SELECT, INSERT, UPDATE ON bookstore.publisher TO manager_role;
+GRANT SELECT, INSERT, UPDATE ON bookstore_db.book TO manager_role;
+GRANT SELECT, INSERT, UPDATE ON bookstore_db.customer_order TO manager_role;
+GRANT SELECT, INSERT, UPDATE ON bookstore_db.order_line TO manager_role;
+GRANT SELECT, INSERT, UPDATE ON bookstore_db.customer TO manager_role;
+GRANT SELECT, INSERT, UPDATE ON bookstore_db.book_author TO manager_role;
+GRANT SELECT, INSERT, UPDATE ON bookstore_db.publisher TO manager_role;
 
 -- This grants select previledges to the clerk role. 
-GRANT SELECT ON bookstore.book TO clerk_role;
-GRANT SELECT ON bookstore.customer_order TO clerk_role;
-GRANT SELECT ON bookstore.order_line TO clerk_role;
+GRANT SELECT ON bookstore_db.book TO clerk_role;
+GRANT SELECT ON bookstore_db.customer_order TO clerk_role;
+GRANT SELECT ON bookstore_db.order_line TO clerk_role;
 
 -- This grants select previledges to the user role. 
-GRANT SELECT ON bookstore.book TO user_role;
-GRANT SELECT ON bookstore.book_language TO user_role;
-GRANT SELECT ON bookstore.publisher TO user_role;
-GRANT SELECT ON bookstore.author TO user_role;
-GRANT SELECT ON bookstore.shipping_method TO user_role;
-GRANT SELECT ON bookstore.user_orders_view TO user_role;
+GRANT SELECT ON bookstore_db.book TO user_role;
+GRANT SELECT ON bookstore_db.book_language TO user_role;
+GRANT SELECT ON bookstore_db.publisher TO user_role;
+GRANT SELECT ON bookstore_db.author TO user_role;
+GRANT SELECT ON bookstore_db.shipping_method TO user_role;
+GRANT SELECT ON bookstore_db.user_orders_view TO user_role;
 
 -- This grants select previledges to the contributer role. 
-GRANT SELECT ON bookstore.book TO contributer_role;
-GRANT SELECT ON bookstore.author TO contributer_role;
-GRANT SELECT ON bookstore.book_author TO contributer_role;
-GRANT SELECT ON bookstore.book_language TO contributer_role;
-GRANT SELECT ON bookstore.publisher TO contributer_role;
+GRANT SELECT ON bookstore_db.book TO contributer_role;
+GRANT SELECT ON bookstore_db.author TO contributer_role;
+GRANT SELECT ON bookstore_db.book_author TO contributer_role;
+GRANT SELECT ON bookstore_db.book_language TO contributer_role;
+GRANT SELECT ON bookstore_db.publisher TO contributer_role;
 
 -- Create view for user_role
 -- This view is used to display the orders of the user. 
