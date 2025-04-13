@@ -72,7 +72,7 @@ CREATE TABLE address (
     postal_code VARCHAR(20),
     country_id INT,
     address_status_id INT NOT NULL,
-    FOREIGN KEY (address_status_id) REFERENCES address_status(id),
+    FOREIGN KEY (address_status_id) REFERENCES address_status(status_id),
     FOREIGN KEY (country_id) REFERENCES country(country_id)
 );
 
