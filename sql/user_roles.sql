@@ -61,7 +61,7 @@ GRANT contributer_role TO 'author_user'@'localhost';
 
 -- Activate roles by default
 -- This activates the roles by default for the users. 
-SET DEFAULT ROLE admin_role TO 'admin_user'@'localhost'
+SET DEFAULT ROLE admin_role TO 'admin_user'@'localhost';
 SET DEFAULT ROLE manager_role TO 'manager_user'@'localhost';
 SET DEFAULT ROLE clerk_role TO 'clerk_user'@'localhost';
 SET DEFAULT ROLE user_role TO 'customer_user'@'localhost';
