@@ -114,6 +114,7 @@ BookStore-Database-Group/
 ├── CONTRIBUTING.md              # Contribution guidelines
 └── .gitignore                   # Ignores MySQL logs, temp files
 
+
 ## Setup Instructions
 
 To set up and explore the project locally:
