@@ -1,8 +1,23 @@
 
 -- This inserts the sample data into the core tables. 
-INSERT INTO book (title, isbn, publication_year, price, language_id, publisher_id)
-VALUES ('The Great Gatsby', '9780743273565', 1925, 9.99, 1, 1),
-       ('1984', '9780451524935', 1949, 12.99, 1, 2);
+INSERT INTO book (
+    title,
+    isbn,
+    publication_year,
+    publication_date,
+    price,
+    author,
+    cover_image,
+    category,
+    number_of_pages,
+    synopsis,
+    language_id,
+    publisher_id
+)
+VALUES 
+('The Great Gatsby', '9780743273565', 1925, '1925-04-10', 9.99, 'F. Scott Fitzgerald', 'gatsby.jpg', 'Classic', 180, 'A story of wealth, love, and the American dream.', 1, 1),
+('1984', '9780451524935', 1949, '1949-06-08', 12.99, 'George Orwell', '1984.jpg', 'Dystopian', 328, 'A dystopian novel about surveillance and oppression.', 1, 2),
+('The Handmaid''s Tale', '9780385490818', 1985, '1985-03-16', 15.99, 'Margaret Atwood', 'handmaid.jpg', 'Dystopian', 311, 'A tale of oppression in a totalitarian regime.', 1, 3);
 
 -- This inserts the sample data into the author table. 
 INSERT INTO author (first_name, last_name) VALUES ('J. Brown', 'Ouma'), ('John', 'Kinuthia');
