@@ -105,56 +105,6 @@ SELECT b.title, b.publication_year, b.price
 FROM book b
 ORDER BY b.publication_year, b.price;
 
--- Query 12: List books by publication year and price
--- This query lists all books by publication year and price. 
-SELECT b.title, b.publication_year, b.price
-FROM book b
-ORDER BY b.publication_year, b.price;
 
--- Query 13: List books by publication year and price
--- This query lists all books by publication year and price.         
-SELECT b.title, b.publication_year, b.price
-FROM book b
-ORDER BY b.publication_year, b.price;
 
--- Query 14: List books by publication year and price
--- This query lists all books by publication year and price.                 
-SELECT b.title, b.publication_year, b.price
-FROM book b
-ORDER BY b.publication_year, b.price;
 
--- Query 15: List books by publication year and price
--- This query lists all books by publication year and price.     
-SELECT b.title, b.publication_year, b.price
-FROM book b
-ORDER BY b.publication_year, b.price;
-
--- Query 16: List books by publication year and price
--- This query lists all books by publication year and price. 
-SELECT b.title, b.publication_year, b.price
-FROM book b
-ORDER BY b.publication_year, b.price;
-
--- Query 17: List books by publication year and price
--- This query lists all books by publication year and price.                                 
-SELECT b.title, b.publication_year, b.price
-FROM book b
-ORDER BY b.publication_year, b.price;
-
--- Query 18: List books by publication year and price
--- This query lists all books by publication year and price.                                     
-SELECT b.title, b.publication_year, b.price
-FROM book b
-ORDER BY b.publication_year, b.price;
-
--- Query 19: List books by publication year and price
--- This query lists all books by publication year and price.                 
-SELECT b.title, b.publication_year, b.price
-FROM book b
-ORDER BY b.publication_year, b.price;
-
--- Query 20: List books by publication year and price
--- This query lists all books by publication year and price.                             
-SELECT b.title, b.publication_year, b.price
-FROM book b
-ORDER BY b.publication_year, b.price;
