@@ -20,7 +20,10 @@ VALUES
 ('The Handmaid''s Tale', '9780385490818', 1985, '1985-03-16', 15.99, 'Margaret Atwood', 'handmaid.jpg', 'Dystopian', 311, 'A tale of oppression in a totalitarian regime.', 1, 3);
 
 -- This inserts the sample data into the author table. 
-INSERT INTO author (first_name, last_name) VALUES ('J. Brown', 'Ouma'), ('John', 'Kinuthia');
+INSERT INTO author (first_name, last_name, biography, date_of_birth, nationality)
+VALUES ('F. Scott', 'Fitzgerald', 'American novelist known for The Great Gatsby.', '1896-09-24', 'American'),
+       ('George', 'Orwell', 'British writer famous for dystopian works like 1984.', '1903-06-25', 'British'),
+       ('Margaret', 'Atwood', 'Canadian author of speculative fiction.', '1939-11-18', 'Canadian');
 
 -- This inserts the sample data into the book_author table.     
 INSERT INTO book_author (book_id, author_id) VALUES (1, 1), (2, 2);
