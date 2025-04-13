@@ -106,10 +106,7 @@ Role definitions and permission tests are included in sql/user_roles.sql and doc
 ├── diagrams/
 │   ├── bookstore_erd.drawio     # ERD source file
 │   └── bookstore_erd.png        # Exported ERD image
-├── docs/
-│   ├── schema_design.md         # Schema and design notes
-│   ├── test_logs.txt            # Test results for scripts and roles
-│   └── query_results.txt        # Query outputs
+├── image/                       # Query outputs
 ├── README.md                    # This file
 ├── CONTRIBUTING.md              # Contribution guidelines
 └── .gitignore                   # Ignores MySQL logs, temp files
