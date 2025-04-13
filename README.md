@@ -174,11 +174,19 @@ git checkout -b <your-name>-task
 
 For more details, see CONTRIBUTING.md.
 
-Team Contributions
+### TEAM ROLES
 
-[Samira Hassannoor]  – Project lead, repository setup, coordination, role definitions,Testing scripts ,documenting results, and preparing submission.
+Group Leader: (Samira): Tester & Documentation Lead
+Focus: Testing scripts, writing queries, documenting results, and preparing submission.
+Tools: MySQL for queries, GitHub for documentation, text editor.
 
-[Member 1 John Kinuthia] –Designing the database schema, creating the ERD, and defining data types.
+Member: 1 (John Kinuthia): Schema Designer & ERD Lead
+Focus: Designing the database schema, creating the ERD, and defining data types.
+Tools: Draw.io, MySQL for schema validation.
 
-[Member 2 John Brown] – Writing SQL scripts for database/tables, user roles, queries and sample data.
+Member: 3 (John Brown): SQL Developer & Data Lead
+Focus: Writing SQL scripts for database/tables, user roles, and sample data.
+Tools: MySQL Workbench or client, text editor for scripts.
+
+
 
